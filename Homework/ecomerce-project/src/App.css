@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div.container {
+  max-width: 1366px;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.head {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.logo {
+  background-color: black;
+  color: white;
+  width: 80px;
+  padding: 20px;
+  font-size: 34px;
+}
+
+div.logo:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+div.category {
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  font-size: 30px;
+  background-color: black;
+  color: white;
+  position: relative;
+}
+
+div.category p.cart-number {
+  padding: 2px;
+  border-radius: 50px;
+  font-size: 18px;
+  background-color: red;
+  color: black;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+}
+
+div.sizeitem {
+  width: 152.39px;
+  margin: 15px;
+  height: 214px;
+}
+
+div.sizeitem p {
+  margin: 2px 0 20px 0;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+div.sizetitle {
+  width: 152px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+div.sizetitle div {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  font-size: 14.62px;
+  background-color: #ececec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.sizetitle div:hover {
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+div.product-list p {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 21px;
+}
+
+div.product-listb {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.product-listb div.product-item {
+  width: 243.2px;
+  height: fit-content;
+  padding: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.product-item-img {
+  width: 223.2px;
+  height: 320px;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+div.product-item-img img {
+  width: 223.2px;
+  height: 320px;
+}
+div.product-item-img-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+div.product-item-img-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+div.product-item button {
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+div.product-item:hover {
+  cursor: pointer;
+}
+
+div.product-item:hover div.product-item-img-front {
+  z-index: 0;
+}
+
+div.product-item:hover div.product-item-img-back {
+  z-index: 1;
+}
+
+div.product-item:hover button {
+  background-color: yellow;
+}
