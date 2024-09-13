@@ -1,0 +1,36 @@
+div.explore {
+  width: 73.125rem;
+  height: 25rem;
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(to right, #1d1d1d 0%, #1d1d1d 80%);
+  position: relative;
+}
+
+div.explore img {
+  width: 100%;
+  opacity: 0.7;
+}
+
+div.explore div.title2 {
+  width: 36.625rem;
+  padding: 0 0.9375rem 0 0;
+  gap: 1rem;
+  position: absolute;
+  bottom: 2.5rem;
+  left: 3.125rem;
+}
+
+div.explore div.title2 div.title2_1 {
+  font-size: 2.25rem;
+  line-height: 4rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+div.explore div.title2 p {
+  font-size: 1rem;
+  line-height: 1.6875rem;
+  font-weight: 400;
+  color: #ffffff;
+}
